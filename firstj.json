@@ -1,6 +1,7 @@
 {
     "companyName" : "Softwareag",
     "location" : "Saarbrucken",
+    "formed" : 1990,
     "Teams" : [
         {
             "name" : "ARIS-YUKON",
