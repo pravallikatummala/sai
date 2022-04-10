@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Our superheroes</title>
+    </head>
+    <body>
+        <header> </header>
+        <section></section>
+        <script>
+            async function populate() {
+                const requestURL = "https://github.com/pravallikatummala/sai/blob/Json/SoftwareAg.json";
+                const request = new Request(requestURL);
+
+                const response = await fetch(request);
+                const network = await response.json();
+
+                populateHeader(networkYukon);
+                populateYukon(networkYukon);
+            }
+
+            function populateHeader(obj){
+                const header =  document.querySelector('header');
+                const myH1 = documet.createElement('h1');
+                myH1.textcontent = obj['companyName'];
+                header.appendChild(myH1);
+
+                const myPara = document.createElement('p');
+                myPara.textcontent = `Location: ${obj['location']} // Formed: ${obj['formed']}`;
+                header.appendChild(myPara);
+            }
+
+            function populateYukon(obj){
+                const section = document.querySelector('section');
+                const yukon = obj['members'];
+
+                for(const aris of yukon){
+                    const myArticle = document.createElement('article');
+                    const myH2 = document.createElement('h2');
+                    const myPara1 = document.createElement('p');
+                    const myPara2 = document.createElement('p');
+                    const myPara3 =  document.createElement('p');
+
+                    myH2.textContent = aris.name;
+                    myPara1.textContent = 'Role : ${aris.Role}';
+                    myPara2.textcontent = 'Gender: ${aris.Gender}';
+                    myPara3.textContent = 'location: ${aris.location}';
+
+                    myArticle.appendChild(myH2);
+                    myArticle.appendChild(myPara1);
+                    myArticle.appendChild(myPara2);
+                    myArticle.appendChild(myPara3);
+
+                    section.appendChild(myArticle);
+                }
+            }
+
+            populate();
+        </script>
+    </body>
+</html>
