@@ -13,7 +13,7 @@
                 const request = new Request(requestURL);
 
                 const response = await fetch(request);
-                const softwareAgText = await response.json();
+                const softwareAg = await response.json();
 
                 populateHeader(softwareAg);
                 populateYukon(softwareAg);
