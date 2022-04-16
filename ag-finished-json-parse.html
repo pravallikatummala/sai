@@ -18,7 +18,7 @@
                 const softwareAg = JSON.parse(softwareAgText);
 
                 populateHeader(softwareAg);
-                populateAg(softwareAg);
+                populateYukon(softwareAg);
             }
 
             function populateHeader(obj){
@@ -32,21 +32,21 @@
                 header.appendChild(myPara);
             }
 
-            function populateAg(obj){
+             function populateYukon(obj){
                 const section = document.querySelector('section');
                 const yukon = obj['members'];
 
-                for(const ag of ag's){
+                for(const aris of yukon){
                     const myArticle = document.createElement('article');
                     const myH2 = document.createElement('h2');
                     const myPara1 = document.createElement('p');
                     const myPara2 = document.createElement('p');
                     const myPara3 =  document.createElement('p');
 
-                    myH2.textContent = ag.name;
-                    myPara1.textContent = 'Role : ${ag.Role}';
-                    myPara2.textcontent = 'Gender: ${ag.Gender}';
-                    myPara3.textContent = 'location: ${ag.location}';
+                    myH2.textContent = aris.name;
+                    myPara1.textContent = 'Role : ${aris.Role}';
+                    myPara2.textcontent = 'Gender: ${aris.Gender}';
+                    myPara3.textContent = 'location: ${aris.location}';
 
                     myArticle.appendChild(myH2);
                     myArticle.appendChild(myPara1);
