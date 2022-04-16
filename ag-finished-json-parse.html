@@ -15,7 +15,7 @@
                 const response = await fetch(request);
                 const softwareAgText = await response.text();
                 
-                const superHeroes = JSON.parse(softwareAgText);
+                const softwareAg = JSON.parse(softwareAgText);
 
                 populateHeader(softwareAg);
                 populateYukon(softwareAg);
