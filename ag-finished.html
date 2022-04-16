@@ -13,10 +13,10 @@
                 const request = new Request(requestURL);
 
                 const response = await fetch(request);
-                const network = await response.json();
+                const softwareAgText = await response.json();
 
-                populateHeader(networkYukon);
-                populateYukon(networkYukon);
+                populateHeader(myJSON);
+                populateYukon(myJSON);
             }
 
             function populateHeader(obj){
