@@ -2,35 +2,31 @@
     "companyName" : "softwareag",
     "location" : "Saarbrucken",
     "formed" : 1990,
-    "Teams" : [
-        {
-            "name" : "ARIS-YUKON",
-            "members": [
-               {
-                "name" : "KAPIL",
-                "Gender" : "Male",
-                "Role" : "Lead Engineer",
-                "location" : "Hyderabad"
-               } ,
-               {
-                   "name" : "KEVIN",
-                   "Gender" : "Male",
-                   "Role" : "Lead Engineer",
-                   "location" : "Saarbrucken"
-               },
-               {
-                   "name" : "FARHANA",
-                   "Gender" : "Female",
-                   "Role" : "ARIS QA",
-                   "location" :"Saarbrucken"
-               },
-               {
-                   "name" : "SAI PRAVALLIKA",
-                   "Gender" :"Female",
-                   "Role" : "ARIS-Process Mining Analytics",
-                   "location" : "Saarbrucken"
-               }
-            ]
-        }
+    "members" : [
+    {
+        "name" : "Kapil",
+        "Team" : "ARIS-YUKON",
+        "location" : "Saarbrucken",
+        "Role" : "Lead Engineer"
+    },
+    {
+        "name" : "kevin",
+        "Team" : "ARIS-YUKON",
+        "location" :"Saarbrucken",
+        "Role" :"Lead Engineer"
+    },
+    {
+        "name" : "Pravallika",
+        "Team" :"ARIS-YUKON",
+        "location" : "Saarbrucken",
+        "Role" : "work student"
+    },
+    {
+        "name" : "farhana",
+        "Team" :"ARIS-YUKON",
+        "location" :"Saarbrucken",
+        "Role" : "qa enginner"
+    }
     ]
 }
+  
