@@ -15,8 +15,8 @@
                 const response = await fetch(request);
                 const softwareAgText = await response.json();
 
-                populateHeader(myJSON);
-                populateYukon(myJSON);
+                populateHeader(softwareAg);
+                populateYukon(softwareAg);
             }
 
             function populateHeader(obj){
