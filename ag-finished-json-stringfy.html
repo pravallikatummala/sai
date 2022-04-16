@@ -15,8 +15,8 @@
                 const response = await fetch(request);
                 const softwareAgText = await response.text();
                 
-                const softwareAg = JSON.parse(softwareAgText);
-                const software = JSON.stringify(softwareAgText);
+                
+                const softwareAg = JSON.stringify(softwareAgText);
 
                 populateHeader(softwareAg);
                 populateYukon(softwareAg);
