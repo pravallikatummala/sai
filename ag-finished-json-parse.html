@@ -15,11 +15,10 @@
                 const response = await fetch(request);
                 const softwareAgText = await response.text();
                 
-                
-                const myJSON = JSON.stringify(softwareAgText);
+                const superHeroes = JSON.parse(softwareAgText);
 
-                populateHeader(myJSON);
-                populateYukon(myJSON);
+                populateHeader(softwareAg);
+                populateYukon(softwareAg);
             }
 
             function populateHeader(obj){
