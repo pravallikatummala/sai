@@ -14,10 +14,10 @@
                 const request = new Request(requestURL,options);
 
                 const response = await fetch(request);
-                const softwareAg = await response.json();
+                const myCompany = await response.json();
 
-                populateHeader(softwareAg);
-                populateYukon(softwareAg);
+                populateHeader(myCompany);
+                populateYukon(myCompany);
             }
 
             function populateHeader(obj){
