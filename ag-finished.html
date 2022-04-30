@@ -8,7 +8,15 @@
         <header> </header>
         <section></section>
         <script>
-            
+            const searchBar = document.getElementById('searchBar');
+searchBar.addEventListener('keyup',(e)=>{
+    const searchValue = e.target.value.toLowerCase();
+    const filteredValue = myCompany.filter((Members)=>{
+        return Members.name.toLowerCase().includes(searchValue);
+    });
+    document.querySelector('section').innerHTML='';
+    populateYukon(filteredValue);
+});
                  
             async function populate() {
                 const requestURL = "https://raw.githubusercontent.com/pravallikatummala/sai/gh-pages/softwareAg.json";
